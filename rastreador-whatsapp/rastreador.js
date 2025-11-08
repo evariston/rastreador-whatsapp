@@ -25,7 +25,7 @@ const MENSAGENS = {
 // Exibe QR code no terminal
 client.on('qr', qr => {
     console.log('Escaneie este QR Code com o seu WhatsApp:');
-    qrcode.generate(qr, { small: true });
+    qrcode.generate(qr, { small: false });
 });
 
 // Confirma login
